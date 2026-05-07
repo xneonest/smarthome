@@ -140,7 +140,7 @@ const sceneColors = {
 
   <div
     ref={cardRef}
-    className="absolute bottom-20 right-8 lg:right-16 z-20 hidden lg:block animate-float"
+    className="absolute bottom-10 right-1/2 translate-x-1/2 md:translate-x-0 md:right-8 lg:right-16 z-10 scale-[0.85] md:scale-100"
   >
         <div className="glass rounded-2xl relative z-[100] p-5 w-[280px] border border-white/10 shadow-float">
           <div className="flex items-center justify-between mb-4">
