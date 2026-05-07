@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
-import LeadForm from '../components/LeadForm';
+import LeadForm from '../components/Leadform';
 
 export default function ClosingCTA() {
   const sectionRef = useRef<HTMLElement>(null);
