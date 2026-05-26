@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
-import { Menu, X, Instagram, Twitter, Linkedin, Youtube, Phone, Mail, MapPin, Globe } from 'lucide-react';
+import { Menu, X, Instagram, Linkedin, Youtube, Phone, Mail, MapPin, Globe } from 'lucide-react';
 import NeonestLogo from './components/Logo';
 import ParticleCanvas from './components/ParticleCanvas';
 import Hero from './sections/Hero';
@@ -16,6 +16,8 @@ import Protocols from './sections/Protocols';
 import NextGen from './sections/NextGen';
 import Lifestyle from './sections/Lifestyle';
 import ClosingCTA from './sections/ClosingCTA';
+import Partners from './sections/Partners' ;
+import DemoVideo from './sections/Demovideo';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -149,6 +151,8 @@ export default function App() {
       {/* Main Content */}
       <main>
         <Hero />
+        <Partners />
+        <DemoVideo />
         <About />
         <Features />
         <SmartModes />
@@ -183,16 +187,37 @@ export default function App() {
                 Where technology meets lifestyle. Your home, your way.
               </p>
               <div className="flex gap-3">
-                {[Instagram, Twitter, Linkedin, Youtube].map((Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-[#00E6C8] hover:bg-white/10 transition-all duration-200"
-                  >
-                    <Icon size={16} />
-                  </a>
-                ))}
-              </div>
+
+  {[
+    {
+      icon: Instagram,
+      link: 'https://www.instagram.com/technometics',
+    },
+    {
+      icon: Linkedin,
+      link: 'https://in.linkedin.com/company/technometics',
+    },
+    {
+      icon: Youtube,
+      link: 'https://www.youtube.com/@technometics03',
+    },
+  ].map((item, i) => {
+    const Icon = item.icon
+
+    return (
+      <a
+        key={i}
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-[#00E6C8] hover:bg-white/10 transition-all duration-200"
+      >
+        <Icon size={16} />
+      </a>
+    )
+  })}
+
+</div>
             </div>
 
             {/* Products */}

@@ -3,19 +3,25 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const locks = [
+type Lock = {
+  name: string
+  image: string
+  specs: string[]
+}
+const locks: Lock[] = [
   {
     name: 'K300',
+     image: '/products/locks/k300.webp',
     specs: [
       '3D Face Recognition + Fingerprint + RF ID',
       'Passcode + OTP + App + Manual Keys',
       '2-Way Communication from App',
       'Door Thickness: 35-70mm',
-    ],
+        ],
   },
   {
     name: 'K703',
+    image: '/products/locks/k703.webp',
     specs: [
       'Ultra Thin with 3D Face Recognition',
       'Fingerprint + RF ID + Passcode + OTP',
@@ -25,6 +31,7 @@ const locks = [
   },
   {
     name: 'K390',
+    image: '/products/locks/k390.webp',
     specs: [
       'Ultra Thin Smart Lock',
       'Fingerprint + RF ID + Passcode + OTP',
@@ -34,6 +41,7 @@ const locks = [
   },
   {
     name: 'K608',
+    image: '/products/locks/k608.webp',
     specs: [
       'Fingerprint + RF ID + Passcode + OTP',
       'App Unlock + Manual Keys',
@@ -43,6 +51,7 @@ const locks = [
   },
   {
     name: 'S200',
+    image: '/products/locks/s200.webp',
     specs: [
       'Smart Handle Lock',
       'Fingerprint + RF ID + Passcode + OTP',
@@ -53,6 +62,7 @@ const locks = [
   },
   {
     name: 'L40',
+    image: '/products/locks/L40.webp',
     specs: [
       'BLE Smart Drawer Lock',
       'Fingerprint + Manual USB Keys',
@@ -146,9 +156,13 @@ export default function SmartLocks() {
               key={lock.name}
               className="lock-card bg-[#16161A] rounded-2xl overflow-hidden border border-white/[0.08] hover:border-[#00E6C8]/30 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="h-[180px] bg-gradient-to-b from-[#1E1E24] to-[#0D0D0F] flex items-center justify-center">
-                <span className="text-5xl font-bold text-white/10">{lock.name}</span>
-              </div>
+              <div className="h-[180px] bg-gradient-to-b from-[#1E1E24] to-[#0D0D0F] flex items-center justify-center p-4">
+  <img
+    src={lock.image}
+    alt={lock.name}
+    className="w-full h-full object-contain"
+  />
+</div>
               <div className="p-5">
                 <h3 className="text-lg font-semibold text-white mb-3">{lock.name}</h3>
                 <ul className="space-y-1.5">

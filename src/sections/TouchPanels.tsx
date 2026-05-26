@@ -7,43 +7,53 @@ gsap.registerPlugin(ScrollTrigger);
 const devices = [
   {
     name: 'Touch Screen Remote',
+    image: '/products/devices/touch-screen-remote.webp',
     desc: '2.5" Touch Screen + Physical Button portable remote to control all smart home devices. Comes with charging dock.',
   },
   {
     name: '4" Touch Panel',
+    image: '/products/devices/touch-panel-4.webp',
     desc: 'Control all smart home devices with built-in Alexa and Zigbee+BLE gateway. Compact and powerful.',
   },
   {
     name: '6" Touch Panel',
+    image: '/products/devices/touch-panel-6.webp',
     desc: 'Control with knob and Bluetooth, connect to external speakers, Zigbee+BLE gateway integration.',
   },
   {
     name: '3.5" Touch Panel',
+    image: '/products/devices/touch-panel-3-5.webp',
     desc: '3 physical buttons (Relay/Scene/Shortcuts), built-in IR and BLE gateway for versatile control.',
   },
   {
     name: 'IR Blaster',
+    image: '/products/devices/ir-blaster.webp',
     desc: 'Control all IR appliances in a room — TV, AC, Music System — with one compact device.',
   },
   {
     name: 'Wireless Scene Controller',
+    image: '/products/devices/wireless-scene-controller.webp',
     desc: '4 button / 12 scene wireless Zigbee controller with LED indicator for instant scene switching.',
   },
   {
     name: 'Curtain Motor',
+    image: '/products/devices/curtain-motor.webp',
     desc: 'Silent, powerful motor that controls all types of curtains with precise positioning.',
   },
   {
     name: 'Smart Gateway',
+    image: '/products/devices/smart-gateway.webp',
     desc: 'Zigbee, IFTTT, Matter, Thread & Bluetooth BLE Direct Plug Gateway. The brain of your smart home.',
   },
   {
     name: 'Retro-Fit Controller',
+    image: '/products/devices/retrofit-controller.webp',
     desc: 'Multi-channel retro-fit devices to upgrade existing switches without rewiring.',
   },
   {
-    name: 'Smart Sensors',
-    desc: 'Motion, temperature, humidity, and light sensors that seamlessly integrate with your automation system.',
+    name: 'Smart Video Door Phone',
+    image: '/products/devices/smart-video-door-phone.webp',
+    desc: 'Smart Video Door Bell, Runs on Battery and Direct Power.',
   },
 ];
 
@@ -118,23 +128,30 @@ export default function TouchPanels() {
           </p>
         </div>
 
-        <div ref={heroImgRef} className="rounded-[20px] overflow-hidden mb-10 shadow-card max-h-[420px]">
-          <img
-            src="/panels-flatlay.jpg"
-            alt="Smart touch panels flatlay"
-            className="w-full h-full object-cover"
-          />
-        </div>
+       <div className="rounded-[20px] overflow-hidden mb-10 shadow-card bg-[#0B0B0E] flex items-center justify-center p-3 md:p-6">
 
+  <img
+    src="/products/panels/panels-flatlay.png"
+    alt="Smart touch panels flatlay"
+    className="w-full max-w-[1100px] h-auto object-contain"
+  />
+
+</div>
         <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {devices.map((device) => (
             <div
               key={device.name}
               className="device-card flex gap-4 bg-[#0D0D0F] rounded-2xl p-5 border border-white/[0.08] hover:border-[rgba(0,230,200,0.2)] transition-all duration-300"
             >
-              <div className="w-[80px] h-[80px] shrink-0 rounded-xl bg-[#1E1E24] flex items-center justify-center">
-                <span className="text-2xl font-bold text-white/10">{device.name.charAt(0)}</span>
-              </div>
+              <div className="w-[80px] h-[80px] shrink-0 rounded-xl overflow-hidden bg-[#1E1E24] border border-white/[0.06] flex items-center justify-center p-2">
+
+  <img
+    src={device.image}
+    alt={device.name}
+    className="w-full h-full object-contain"
+  />
+
+</div>
               <div className="flex-1">
                 <h3 className="text-base font-semibold text-white mb-1.5">{device.name}</h3>
                 <p className="text-sm text-white/50 leading-relaxed">{device.desc}</p>

@@ -51,7 +51,7 @@ const sceneColors = {
     <section
       ref={sectionRef}
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[115vh] md:min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image */}
       <div
@@ -97,7 +97,7 @@ const sceneColors = {
   }}
 />
       {/* Content */}
-      <div className="relative z-10 container-main text-center flex flex-col items-center pt-20">
+      <div className="relative z-10 container-main text-center flex flex-col items-center pt-20 md:pt-0 md:-translate-y-10">
         <span
           ref={labelRef}
           className="label-style text-[#00E6C8] mb-6"
@@ -107,7 +107,7 @@ const sceneColors = {
 
         <h1
           ref={headlineRef}
-          className="text-[clamp(48px,6vw,88px)] font-bold leading-[0.95] tracking-[-0.03em] text-white text-glow mb-6"
+          className="text-[clamp(36px,10vw,88px)] md:text-[clamp(48px,6vw,88px)] font-bold leading-[0.95] tracking-[-0.03em] text-white text-glow mb-6"
         >
           <span className="word inline-block">Your</span>{' '}
           <span className="word inline-block">Home,</span>{' '}
@@ -129,65 +129,134 @@ const sceneColors = {
           >
             Explore Products
           </a>
-          <button className="flex items-center gap-2 text-white border border-white/30 px-8 py-3.5 rounded-full hover:border-[#00E6C8] hover:bg-[rgba(0,230,200,0.08)] transition-all duration-300 text-sm font-medium">
-            <Play size={16} fill="currentColor" />
-            Watch Video
-          </button>
+          <a
+  href="#demo-video"
+  className="flex items-center gap-2 text-white border border-white/30 px-8 py-3.5 rounded-full hover:border-[#00E6C8] hover:bg-[rgba(0,230,200,0.08)] transition-all duration-300 text-sm font-medium"
+>
+  <Play size={16} fill="currentColor" />
+  Watch Video
+</a>
         </div>
-      </div>
-
-      {/* Floating Smart Card */}
-
-  <div
-    ref={cardRef}
-    className="absolute bottom-10 right-1/2 translate-x-1/2 md:translate-x-0 md:right-8 lg:right-16 z-10 scale-[0.85] md:scale-100"
-  >
-        <div className="glass rounded-2xl relative z-[100] p-5 w-[280px] border border-white/10 shadow-float">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-sm font-medium text-white">Living Room</span>
-            <span className="text-xs text-[#00E6C8] font-mono">24°C</span>
-          </div>
-          <div className="flex gap-2 mb-4">
-  {['Morning', 'Evening', 'Night'].map((item) => (
-    <button
-      key={item}
-      onClick={() => {
-        setScene(item)
-
-        if (item === 'Morning') setBrightness(100)
-        if (item === 'Evening') setBrightness(65)
-        if (item === 'Night') setBrightness(25)
-      }}
-      className={`cursor-pointer text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
-        scene === item
-          ? 'bg-[#00E6C8] text-black border border-[#00E6C8]'
-          : 'bg-white/5 text-white/60 border border-white/10 hover:border-white/20'
-      }`}
-    >
-      {item}
-    </button>
-  ))}
-</div>
-          <div className="flex items-center gap-3">
-  <span className="text-xs text-white/40">Brightness</span>
-
-  <input
-    type="range"
-    min="0"
-    max="100"
-    value={brightness}
-    onChange={(e) => setBrightness(Number(e.target.value))}
-    className="flex-1 accent-[#00E6C8]"
-  />
-
-  <span className="text-xs text-white/60 font-mono">
-    {brightness}%
-  </span>
-</div>
-        </div>
-      </div>
       
+{/* Mobile Smart Card */}
+<div className="md:hidden mt-12">
+  <div className="glass rounded-2xl p-5 w-[250px] border border-white/10 shadow-float">
 
+    <div className="flex items-center justify-between mb-4">
+      <span className="text-sm font-medium text-white">
+        Living Room
+      </span>
+
+      <span className="text-xs text-[#00E6C8] font-mono">
+        24°C
+      </span>
+    </div>
+
+    <div className="flex gap-2 mb-4 justify-center">
+      {['Morning', 'Evening', 'Night'].map((item) => (
+        <button
+          key={item}
+          onClick={() => {
+            setScene(item)
+
+            if (item === 'Morning') setBrightness(100)
+            if (item === 'Evening') setBrightness(65)
+            if (item === 'Night') setBrightness(25)
+          }}
+          className={`cursor-pointer text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
+            scene === item
+              ? 'bg-[#00E6C8] text-black border border-[#00E6C8]'
+              : 'bg-white/5 text-white/60 border border-white/10 hover:border-white/20'
+          }`}
+        >
+          {item}
+        </button>
+      ))}
+    </div>
+
+    <div className="flex items-center gap-3">
+      <span className="text-xs text-white/40">
+        Brightness
+      </span>
+
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value={brightness}
+        onChange={(e) => setBrightness(Number(e.target.value))}
+        className="flex-1 accent-[#00E6C8]"
+      />
+
+      <span className="text-xs text-white/60 font-mono">
+        {brightness}%
+      </span>
+    </div>
+
+  </div>
+</div>
+      
+  </div>          
+{/* Desktop Floating Card */}
+<div
+  ref={cardRef}
+  className="hidden md:block absolute bottom-16 right-8 lg:right-16 z-10"
+>
+  <div className="glass rounded-2xl relative z-[100] p-5 w-[280px] border border-white/10 shadow-float">
+
+    <div className="flex items-center justify-between mb-4">
+      <span className="text-sm font-medium text-white">
+        Living Room
+      </span>
+
+      <span className="text-xs text-[#00E6C8] font-mono">
+        24°C
+      </span>
+    </div>
+
+    <div className="flex gap-2 mb-4">
+      {['Morning', 'Evening', 'Night'].map((item) => (
+        <button
+          key={item}
+          onClick={() => {
+            setScene(item)
+
+            if (item === 'Morning') setBrightness(100)
+            if (item === 'Evening') setBrightness(65)
+            if (item === 'Night') setBrightness(25)
+          }}
+          className={`cursor-pointer text-xs px-3 py-1.5 rounded-full transition-all duration-300 ${
+            scene === item
+              ? 'bg-[#00E6C8] text-black border border-[#00E6C8]'
+              : 'bg-white/5 text-white/60 border border-white/10 hover:border-white/20'
+          }`}
+        >
+          {item}
+        </button>
+      ))}
+    </div>
+
+    <div className="flex items-center gap-3">
+      <span className="text-xs text-white/40">
+        Brightness
+      </span>
+
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value={brightness}
+        onChange={(e) => setBrightness(Number(e.target.value))}
+        className="flex-1 accent-[#00E6C8]"
+      />
+
+      <span className="text-xs text-white/60 font-mono">
+        {brightness}%
+      </span>
+    </div>
+
+  </div>
+</div>
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
         <ChevronDown className="w-6 h-6 text-white/40" />

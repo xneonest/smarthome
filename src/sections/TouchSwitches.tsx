@@ -6,18 +6,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const switches = [
   {
-    name: '8 Switches (4M)',
-    specs: [
-      'Toggle / Scene / 2-way control',
-      'Zigbee Smart Touch Switch',
-      'Glass Panel, 2.5D Curved Bezel',
-      'Customizable icons & colors',
-      'Face Plate: White/Black',
-      'Bezel: Gold/Silver/Black',
+  name: '10S Stellar Smart Switch',
+  image: '/products/switches/switch-8.webp',
+  specs: [
+      'Type : Zigbee (Zigbee Gateway Required)',
+      'Premium Aluminum Finish',
+      '10 Switches',
+      'Backlight Dimming Option',
+      '4 Switches / Relays + 6 Scenes',
+      'Any switch can be used as a normal switch or scene',
     ],
   },
   {
     name: '4 Switches + Socket + USB (4M)',
+    image: '/products/switches/switch-4-usb.webp',
     specs: [
       'Toggle / Scene / 2-way control',
       'Zigbee Smart Touch Switch',
@@ -29,6 +31,7 @@ const switches = [
   },
   {
     name: '8 Switches + Socket + USB (6M/8M)',
+    image: '/products/switches/switch-8-usb.webp',
     specs: [
       'Toggle / Scene / 2-way control',
       'Zigbee Smart Touch Switch',
@@ -144,9 +147,15 @@ export default function TouchSwitches() {
               key={sw.name}
               className="switch-card bg-[#16161A] rounded-2xl overflow-hidden border border-white/[0.08] hover:border-[#00D26A]/30 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="h-[160px] bg-gradient-to-b from-[#1E1E24] to-[#0D0D0F] flex items-center justify-center">
-                <span className="text-4xl font-bold text-white/10">{sw.name.split(' ')[0]}</span>
-              </div>
+              <div className="h-[160px] bg-gradient-to-b from-[#1E1E24] to-[#0D0D0F] flex items-center justify-center p-4">
+
+  <img
+    src={sw.image}
+    alt={sw.name}
+    className="w-full h-full object-contain"
+  />
+
+</div>
               <div className="p-5">
                 <h3 className="text-base font-semibold text-white mb-3">{sw.name}</h3>
                 <ul className="space-y-1.5">
