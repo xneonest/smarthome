@@ -12,8 +12,8 @@ const sceneColors = {
   Night: 'rgba(0,60,120,0.30)',
 }
   const sectionRef = useRef<HTMLElement>(null);
-  const labelRef = useRef<HTMLSpanElement>(null);
-  const headlineRef = useRef<HTMLHeadingElement>(null);
+  const labelRef = useRef<HTMLHeadingElement>(null);
+  const headlineRef = useRef<HTMLParagraphElement>(null);
   const subRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -98,14 +98,14 @@ const sceneColors = {
 />
       {/* Content */}
       <div className="relative z-10 container-main text-center flex flex-col items-center pt-20 md:pt-0 md:-translate-y-10">
-        <span
+        <h1
           ref={labelRef}
           className="label-style text-[#00E6C8] mb-6"
         >
-          THE FUTURE OF HOME LIVING
-        </span>
+          Smart Home Automation in Mumbai, Navi Mumbai &amp; Thane
+        </h1>
 
-        <h1
+        <p
           ref={headlineRef}
           className="text-[clamp(36px,10vw,88px)] md:text-[clamp(48px,6vw,88px)] font-bold leading-[0.95] tracking-[-0.03em] text-white text-glow mb-6"
         >
@@ -113,13 +113,13 @@ const sceneColors = {
           <span className="word inline-block">Home,</span>{' '}
           <span className="word inline-block">Your</span>{' '}
           <span className="word inline-block">Way</span>
-        </h1>
+        </p>
 
         <p
           ref={subRef}
           className="text-lg md:text-xl text-white/65 max-w-[560px] mb-10 leading-relaxed"
         >
-          Where technology meets lifestyle. Premium smart home automation designed around you.
+          Premium smart home automation for apartments and villas — lighting, smart locks, touch panels, curtains and security, designed and installed by Neonest.
         </p>
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center gap-4">

@@ -117,6 +117,10 @@ if (submitted) {
       )
 
       setSubmitted(true)
+      ;(window as any).gtag?.('event', 'generate_lead', {
+        form: 'consultation',
+        city: formData.city,
+      })
 
       
 

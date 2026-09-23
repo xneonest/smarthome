@@ -131,7 +131,7 @@ export default function TouchPanels() {
        <div className="rounded-[20px] overflow-hidden mb-10 shadow-card bg-[#0B0B0E] flex items-center justify-center p-3 md:p-6">
 
   <img
-    src="/products/panels/panels-flatlay.png"
+    src="/products/panels/panels-flatlay.webp"
     alt="Smart touch panels flatlay"
     className="w-full max-w-[1100px] h-auto object-contain"
   />

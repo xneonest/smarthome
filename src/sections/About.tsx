@@ -80,8 +80,8 @@ export default function About() {
             </h2>
             <p className="text-base text-white/65 leading-relaxed mb-10">
               {aboutText.split(' ').map((word, i) => (
-                <span key={i} className="about-word inline-block mr-[0.3em]">
-                  {word}
+                <span key={i}>
+                  <span className="about-word inline-block">{word}</span>{' '}
                 </span>
               ))}
             </p>
