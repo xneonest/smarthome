@@ -107,12 +107,12 @@ export default function App() {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <button
-              onClick={() => scrollTo('#contact')}
+            <a
+              href="/plan-your-smart-home/"
               className="gradient-bg text-[#0D0D0F] font-semibold text-sm px-6 py-2.5 rounded-full hover:brightness-110 hover:scale-[1.03] transition-all duration-300"
             >
-              Get Started
-            </button>
+              Plan Your Home
+            </a>
           </div>
 
           {/* Mobile Toggle */}
@@ -137,12 +137,12 @@ export default function App() {
                   {link.label}
                 </button>
               ))}
-              <button
-                onClick={() => scrollTo('#contact')}
-                className="gradient-bg text-[#0D0D0F] font-semibold text-sm px-6 py-3 rounded-full mt-2"
+              <a
+                href="/plan-your-smart-home/"
+                className="gradient-bg text-[#0D0D0F] font-semibold text-sm px-6 py-3 rounded-full mt-2 text-center"
               >
-                Get Started
-              </button>
+                Plan Your Smart Home
+              </a>
             </div>
           </div>
         )}
@@ -225,6 +225,7 @@ export default function App() {
               <h4 className="text-sm font-semibold text-white mb-4">Services</h4>
               <ul className="space-y-2.5">
                 {[
+                  { label: 'Plan Your Smart Home', href: '/plan-your-smart-home/' },
                   { label: 'Home Automation Mumbai', href: '/smart-home-automation-mumbai/' },
                   { label: 'Home Automation Navi Mumbai', href: '/home-automation-navi-mumbai/' },
                   { label: 'Home Automation Thane', href: '/home-automation-thane/' },

@@ -124,8 +124,14 @@ const sceneColors = {
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href="#products"
+            href="/plan-your-smart-home/"
             className="gradient-bg text-[#0D0D0F] font-semibold text-sm px-8 py-3.5 rounded-full hover:brightness-110 hover:scale-[1.03] transition-all duration-300"
+          >
+            Plan Your Smart Home
+          </a>
+          <a
+            href="#products"
+            className="text-white border border-white/30 px-8 py-3.5 rounded-full hover:border-[#00E6C8] transition-all duration-300 text-sm font-medium hidden sm:inline-flex"
           >
             Explore Products
           </a>
