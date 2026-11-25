@@ -20,4 +20,5 @@ details{background:#141417;border:1px solid rgba(255,255,255,.08);border-radius:
 footer{border-top:1px solid rgba(255,255,255,.08);padding:32px 0 90px;color:rgba(255,255,255,.55);font-size:16px}
 .float{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:9}.float a{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.4)}
 .crumb{font-size:15px;color:rgba(255,255,255,.5);margin-top:24px}.crumb a{color:rgba(255,255,255,.7)}
+.nn-logo circle{transform-origin:24px 24px}.nn-r1{animation:nnspin 8s linear infinite}.nn-r2{animation:nnspin 6s linear infinite reverse}@keyframes nnspin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.nn-logo circle{animation:none}}
 @media(max-width:640px){body{font-size:17px}header .btn{padding:10px 20px}.hero img{aspect-ratio:4/3}.hide-sm{display:none}.cta{padding:28px 18px}}
