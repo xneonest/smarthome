@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Smart Home Designer: Upload Your Drawings | Neonest Mumbai</title>
+<meta name="description" content="Upload your home's floor plan or electrical layout and get a free room-by-room smart home design from Neonest: switch plates, curtain motors, locks, gateways and more. Mumbai, Navi Mumbai & Thane.">
+<link rel="canonical" href="https://neonestx.com/smart-home-design/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0D0D0F">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Neonest">
+<meta property="og:title" content="AI Smart Home Designer | Neonest">
+<meta property="og:description" content="Upload your drawings, choose what to automate, and get a room-wise smart home design for free.">
+<meta property="og:url" content="https://neonestx.com/smart-home-design/"><meta property="og:image" content="https://neonestx.com/hero-living-room.jpg"><meta property="og:locale" content="en_IN">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://neonestx.com/"},{"@type":"ListItem","position":2,"name":"AI smart home designer","item":"https://neonestx.com/smart-home-design/"}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DD8XCK7ZRR"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DD8XCK7ZRR');</script>
+<style>
+:root{--bg:#0D0D0F;--card:#141417;--card2:#1A1A1E;--line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.16);--mute:rgba(255,255,255,.68);--dim:rgba(255,255,255,.48);--a:#00E6C8;--grad:linear-gradient(90deg,#00E6C8,#00A8E8);--ok:#25D366;--warn:#FFB347}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:#ECECEE;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.55}
+a{color:var(--a)}button,input,select{font:inherit;color:inherit}button{cursor:pointer}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:20;background:rgba(13,13,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.06em}
+.nn-logo circle{transform-origin:24px 24px}.nn-r1{animation:nnspin 8s linear infinite}.nn-r2{animation:nnspin 6s linear infinite reverse}@keyframes nnspin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.nn-logo circle,.spin{animation:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--grad);color:#0D0D0F;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:999px;border:0;font-size:16px}
+.btn.ghost{background:transparent;color:#fff;border:1px solid var(--line2)}.btn.wa{background:var(--ok);color:#fff}
+.btn:disabled,.btn[aria-disabled=true]{opacity:.5;pointer-events:none}
+.hero{padding:36px 0 10px}.eyebrow{color:var(--a);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:10px 0 12px;color:#fff;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--mute);max-width:780px;margin:0}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 8px}
+.steps span{padding:7px 14px;border-radius:999px;border:1px solid var(--line2);color:var(--dim);font-size:14px}
+.steps span.on{border-color:var(--a);color:var(--a)}.steps span.done{color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;margin:18px 0}
+.card h2{margin:0 0 6px;font-size:24px;color:#fff}.sub{color:var(--dim);margin:0 0 18px;font-size:16px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f label{display:block;font-size:15px;color:var(--mute);margin-bottom:6px;font-weight:600}
+.f input,.f select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line2);background:#0F0F12;color:#fff;font-size:17px}
+.f.full{grid-column:1/-1}
+.check{display:flex;gap:10px;align-items:flex-start;color:var(--mute);font-size:15px}.check input{width:20px;height:20px;margin-top:3px;flex:none}
+.err{color:#ff8a80;font-size:15px;margin-top:10px;min-height:1px}
+.drop{border:2px dashed var(--line2);border-radius:18px;padding:34px 18px;text-align:center;background:var(--card2);transition:.2s}
+.drop.over{border-color:var(--a);background:rgba(0,230,200,.06)}
+.drop b{display:block;color:#fff;font-size:19px;margin:8px 0 4px}.drop p{margin:0;color:var(--dim);font-size:15px}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:14px}
+.th{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.th img{width:100%;height:110px;object-fit:contain;display:block}
+.th small{display:block;background:var(--card2);color:var(--mute);font-size:12px;padding:5px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.th button{position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;border:0;background:rgba(0,0,0,.7);color:#fff;font-size:16px;line-height:1}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.status{display:flex;gap:12px;align-items:center;padding:16px;border-radius:14px;background:var(--card2);margin-top:14px;color:var(--mute)}
+.spin{width:22px;height:22px;border-radius:50%;border:3px solid rgba(255,255,255,.15);border-top-color:var(--a);animation:nnspin 0.9s linear infinite;flex:none}
+.note{padding:14px 16px;border-radius:14px;background:rgba(0,230,200,.07);border:1px solid rgba(0,230,200,.25);color:#fff;margin:0 0 16px;font-size:16px}
+.note.warn{background:rgba(255,179,71,.08);border-color:rgba(255,179,71,.3)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:10px 16px;border-radius:999px;border:1px solid var(--line2);background:transparent;font-size:15px;color:#fff}
+.chip.on{background:var(--a);color:#0D0D0F;border-color:var(--a);font-weight:600}
+.lbl{font-size:15px;color:var(--mute);margin:18px 0 8px;font-weight:600}
+.rooms{display:grid;gap:12px}
+.room{border:1px solid var(--line);border-radius:16px;background:var(--card2);padding:16px}
+.room.off{opacity:.75}
+.rh{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.rh input{flex:1;min-width:160px;padding:10px 12px;border-radius:10px;border:1px solid var(--line2);background:#0F0F12;color:#fff;font-size:17px;font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:999px;overflow:hidden}
+.seg button{padding:9px 14px;border:0;background:transparent;font-size:14px;color:var(--mute)}
+.seg button.on{background:var(--a);color:#0D0D0F;font-weight:700}
+.est{font-size:12px;color:var(--warn);border:1px solid rgba(255,179,71,.4);border-radius:999px;padding:2px 8px}
+.del{background:none;border:0;color:var(--dim);font-size:22px;padding:4px 8px}
+.loads{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:12px}
+.ld{background:#0F0F12;border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center}
+.ld small{display:block;color:var(--dim);font-size:12px;margin-bottom:4px}
+.ld .st{display:flex;align-items:center;justify-content:space-between;gap:2px}
+.ld .st button{width:30px;height:30px;border-radius:9px;border:1px solid var(--line2);background:transparent;font-size:18px;line-height:1;color:#fff}
+.ld .st span{font-weight:700;font-size:17px;min-width:22px}
+.res-room{border-top:1px solid var(--line);padding:14px 0}
+.res-room:first-child{border-top:0}
+.res-room h3{margin:0 0 8px;font-size:18px;color:#fff;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;background:rgba(0,230,200,.12);color:var(--a)}
+.tag.t{background:rgba(255,255,255,.08);color:var(--mute)}
+.res-room ul{margin:0;padding-left:20px;color:var(--mute)}.res-room li{margin:3px 0}
+.res-room li b{color:#fff}
+.code{font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(0,230,200,.1);color:var(--a);padding:1px 7px;border-radius:6px;font-size:15px}
+.whole{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:10px}
+.wi{display:flex;gap:10px;align-items:center;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:10px}
+.wi img{width:54px;height:54px;object-fit:contain;background:radial-gradient(circle,#2a2a30,#17171a);border-radius:10px;flex:none;padding:4px}
+.wi b{display:block;color:#fff;font-size:15px}.wi small{color:var(--dim);font-size:13px}
+.totals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:6px 0 16px}
+.tot{background:var(--card2);border-radius:14px;padding:12px;text-align:center}.tot b{display:block;font-size:26px;color:#fff}.tot small{color:var(--dim);font-size:13px}
+.opt select{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line2);background:#0F0F12;color:#fff;font-size:16px}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.hidden{display:none!important}
+footer{border-top:1px solid var(--line);padding:28px 0 60px;color:var(--dim);font-size:15px;margin-top:30px}
+@media(max-width:760px){.form,.opts{grid-template-columns:1fr}.loads{grid-template-columns:repeat(3,minmax(0,1fr))}.ld .st button{width:36px;height:36px}.totals{grid-template-columns:repeat(2,1fr)}.card{padding:18px 14px}}
+@media(max-width:440px){.loads{grid-template-columns:repeat(2,minmax(0,1fr))}.ld small{font-size:13px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="brand" href="/"><svg class="nn-logo" width="26" height="26" viewBox="0 0 48 48" aria-hidden="true"><circle class="nn-r1" cx="24" cy="24" r="20" fill="none" stroke="#00E6C8" stroke-width="3" stroke-linecap="round" stroke-dasharray="90 180"/><circle class="nn-r2" cx="24" cy="24" r="13" fill="none" stroke="#00A8E8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="60 180"/></svg>NEONEST</a>
+ <a class="btn" href="tel:+919422481711">Call us</a>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+ <div class="eyebrow">Free AI smart home designer · Mumbai, Navi Mumbai &amp; Thane</div>
+ <h1>Upload your home drawings. Get a room-by-room smart home design.</h1>
+ <p class="lead">Share your floor plan, electrical layout or 3D views. Neonest reads them, you choose what to automate, and you get a complete design with the exact switch plates, curtain motors, locks and hubs for every room. Free, no obligation.</p>
+ <div class="steps" id="steps"><span data-s="1">1 · Your details</span><span data-s="2">2 · Upload drawings</span><span data-s="3">3 · Choose what to automate</span><span data-s="4">4 · Your design</span></div>
+</section>
+
+<!-- STEP 1 -->
+<section class="card" id="s1">
+ <h2>Tell us about you</h2>
+ <p class="sub">Takes 20 seconds. This unlocks the designer and lets our team prepare your quotation.</p>
+ <div class="form">
+  <div class="f"><label for="gName">Your name *</label><input id="gName" autocomplete="name"></div>
+  <div class="f"><label for="gPhone">Mobile number *</label><input id="gPhone" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile"></div>
+  <div class="f"><label for="gArea">Area / society</label><input id="gArea" placeholder="e.g. Powai, Hiranandani Gardens"></div>
+  <div class="f"><label for="gHome">Home type</label><select id="gHome"><option>1 BHK</option><option>2 BHK</option><option selected>3 BHK</option><option>4 BHK</option><option>Villa</option></select></div>
+  <div class="f"><label for="gStage">Project stage</label><select id="gStage"><option>Under construction</option><option selected>Ready, before interiors</option><option>Already living in it</option></select></div>
+  <div class="f"><label for="gEmail">Email (optional)</label><input id="gEmail" type="email" autocomplete="email"></div>
+  <div class="f full"><label class="check"><input type="checkbox" id="gConsent"><span>I agree that Neonest may contact me about my project, and that drawings I upload are read by Google's Gemini AI service to prepare my design. Free AI services may use uploaded content to improve their products, so please don't upload anything confidential. You can also skip the upload and enter rooms yourself.</span></label></div>
+ </div>
+ <div class="err" id="gErr"></div>
+ <div class="row"><button class="btn" id="gGo">Continue to the designer</button></div>
+</section>
+
+<!-- STEP 2 -->
+<section class="card hidden" id="s2">
+ <h2>Upload your drawings</h2>
+ <p class="sub">Electrical layouts give the most accurate design. Civil plans and 3D views also work. PDF, JPG or PNG; up to 6 pages in total.</p>
+ <label class="drop" id="drop" for="file">
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00E6C8" stroke-width="1.8" aria-hidden="true"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+  <b>Tap to choose files, or drop them here</b>
+  <p>Civil layout · Electrical layout · Furniture layout · 3D elevations</p>
+  <input type="file" id="file" accept=".pdf,image/png,image/jpeg,image/webp" multiple hidden>
+ </label>
+ <div class="thumbs" id="thumbs"></div>
+ <div class="status hidden" id="prog"><div class="spin"></div><div id="progT">Reading your drawings…</div></div>
+ <div class="err" id="uErr"></div>
+ <div class="row">
+  <button class="btn" id="analyse" disabled>Analyse my drawings</button>
+  <button class="btn ghost" id="skip">Skip: I'll enter rooms myself</button>
+ </div>
+</section>
+
+<!-- STEP 3 -->
+<section class="card hidden" id="s3">
+ <h2>Choose what to automate</h2>
+ <p class="sub">Check the rooms and counts, then set each room to <b>Smart</b>, <b>Touch look</b> (glass touch plates without app control) or <b>Normal</b> (keep regular switches).</p>
+ <div id="aiNote"></div>
+ <div class="lbl">Quick choices</div>
+ <div class="chips">
+  <button class="chip" data-preset="all">Whole home smart</button>
+  <button class="chip" data-preset="living">Only living room smart</button>
+  <button class="chip" data-preset="livbed">Living + bedrooms smart</button>
+  <button class="chip" data-preset="looks">Smart living, touch look elsewhere</button>
+ </div>
+ <div class="lbl">Rooms</div>
+ <div class="rooms" id="rooms"></div>
+ <div class="row"><button class="btn ghost" id="addRoom">+ Add a room</button></div>
+
+ <div class="lbl" style="margin-top:26px">Whole-home options</div>
+ <div class="opts">
+  <div class="opt f"><label for="oWiring">Wiring</label><select id="oWiring"><option value="new">New wiring / during interiors</option><option value="retro">Finished home: keep my switches (retro-fit)</option></select></div>
+  <div class="opt f"><label for="oLock">Main door lock</label><select id="oLock"><option value="">No smart lock</option><option value="lk-s200">S200: fingerprint, PIN, card, app</option><option value="lk-k390" selected>K390 slim: fingerprint, PIN, card, OTP</option><option value="lk-s3">S3 Pro: 3D face + video doorbell</option><option value="lk-k300">K300: 3D face, indoor screen</option><option value="lk-s5">S5 AI: video lock, 5 finishes</option><option value="lk-s7">S7 Villa: 3 ft handle, villa door</option><option value="lk-g1">G1: for glass doors</option></select></div>
+  <div class="opt f"><label for="oDoor">Door camera</label><select id="oDoor"><option value="">None</option><option value="se-bell" selected>Video doorbell</option><option value="se-vdp">7" video door phone</option></select></div>
+  <div class="opt f"><label for="oPanel">Wall touch screen</label><select id="oPanel"><option value="">None</option><option value="ct-p4">4" panel, Alexa built in</option><option value="ct-p7">7" panel</option><option value="ct-p10">10" panel</option></select></div>
+  <div class="opt f"><label for="oScene">Scene controllers</label><select id="oScene"><option value="0">None</option><option value="bed" selected>One in each smart bedroom</option><option value="all">One in every smart room</option></select></div>
+  <div class="opt f"><label for="oLocks2">Bedroom door locks</label><select id="oLocks2"><option value="0">None</option><option value="1">H1 lock on smart bedrooms</option></select></div>
+ </div>
+ <div class="row" style="margin-top:22px"><button class="btn" id="design">Design my smart home</button></div>
+</section>
+
+<!-- STEP 4 -->
+<section class="card hidden" id="s4">
+ <h2>Your smart home design</h2>
+ <p class="sub">A first design based on your drawings and choices. Our engineer confirms every board, load and finish at a free site visit before the final quotation.</p>
+ <div class="totals" id="totals"></div>
+ <div id="result"></div>
+ <div class="lbl">Whole home</div>
+ <div class="whole" id="whole"></div>
+ <div class="row" style="margin-top:24px">
+  <a class="btn wa" id="send" href="#" target="_blank" rel="noopener">Send my design to Neonest on WhatsApp</a>
+  <button class="btn ghost" id="edit">Change my choices</button>
+ </div>
+ <p class="sub" style="margin-top:12px">Your design also reaches our team automatically. After you press Send, please attach your drawings in the WhatsApp chat so our engineer can prepare the exact quotation.</p>
+</section>
+</main>
+
+<footer><div class="wrap">
+ <p><b style="color:#fff">Neonest</b> · Smart home automation in Mumbai, Navi Mumbai &amp; Thane · <a href="tel:+919422481711">+91 94224 81711</a> · <a href="mailto:info@neonestx.com">info@neonestx.com</a></p>
+ <p><a href="/">Home</a> · <a href="/plan-your-smart-home/">Quick planner (no drawings)</a> · <a href="/smart-switches-touch-panels/">Switches &amp; panels</a> · <a href="/smart-door-locks-mumbai/">Smart locks</a> · <a href="/retrofit-home-automation/">Retrofit</a></p>
+ <p>Designs are automatic first drafts. AI can misread drawings; final design and price are confirmed after a site visit. Product images are representative.</p>
+</div></footer>
+
+<script>
+(function(){
+'use strict';
+var WA='919422481711', IMG='/plan-your-smart-home/img/';
+function $(s){return document.querySelector(s);} function $$(s){return Array.prototype.slice.call(document.querySelectorAll(s));}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function track(e,p){try{if(window.gtag)gtag('event',e,p||{});}catch(_){}}
+function store(k,v){try{if(v===undefined)return sessionStorage.getItem(k);sessionStorage.setItem(k,v);}catch(_){return null;}}
+
+// ---------- Catalogue: glass touch plates (code -> box) ----------
+var BOX={'2M':['Socket','4S','2S+1C','2C','2S+1F','1F+1C'],
+ '4M':['4S+1SK','2S+1C+1SK','2C+1SK','8S','6S+1C','4S+2C','2S+1F+1SK','1F+1C+1SK','6S+1F','4S+1F+1C','2S+1F+2C','4S+2F','2S+2F+1C','2F+2C'],
+ '6M/8M':['4S+2SK','2S+1C+2SK','2C+2SK','8S+1SK','6S+1C+1SK','4S+2C+1SK','2S+1F+2SK','1F+1C+2SK','6S+1F+1SK','4S+1F+1C+1SK','2S+1F+2C+1SK','10S','8S+1C','6S+2C','8S+1F','6S+1F+1C','4S+1F+2C','6S+2F','4S+2F+1C','2S+2F+2C','4S+2F+1SK','2S+2F+1C+1SK','2F+2C+1SK'],
+ '12M':['10S+3SK','8S+1C+3SK','6S+2C+3SK','8S+1F+3SK','6S+1F+1C+3SK','4S+1F+2C+3SK','6S+2F+3SK','4S+2F+1C+3SK','2S+2F+2C+3SK']};
+var RANK={'2M':0,'4M':1,'6M/8M':2,'12M':3};
+var CFG=[];Object.keys(BOX).forEach(function(b){BOX[b].forEach(function(c){var d={code:c,box:b,S:0,F:0,C:0,K:0};(c==='Socket'?'1SK':c).replace(/(\d+)(SK|S|F|C)/g,function(_,n,t){d[t==='SK'?'K':t]+=+n;});CFG.push(d);});});
+function fit(s,f,c,k){var best=null,bs=1e9;CFG.forEach(function(d){if(d.S<s||d.F<f||d.C<c||d.K<k)return;var sc=RANK[d.box]*100+(d.S-s)+3*(d.F-f)+3*(d.C-c)+2*(d.K-k);if(sc<bs){bs=sc;best=d;}});return best;}
+function split(n,b){var a=[];for(var i=0;i<b;i++)a.push(Math.floor(n/b)+(i<n%b?1:0));return a;}
+function rot(a,o){return a.slice(o).concat(a.slice(0,o));}
+function opts(n,b){var o=[],seen={};function add(a){var k=a.join(',');if(!seen[k]){seen[k]=1;o.push(a);}}
+ var e=split(n,b);for(var i=0;i<b;i++)add(rot(e,i));
+ if(b<=4)for(var j=0;j<b;j++){var a=[];for(var x=0;x<b;x++)a.push(x===j?n:0);add(a);}return o;}
+function score(d,s,f,c,k){return RANK[d.box]*100+(d.S-s)+3*(d.F-f)+3*(d.C-c)+2*(d.K-k);}
+function bestFor(b,s,f,c,k){var OS=opts(s,b),OF=opts(f,b),OC=opts(c,b),OK=opts(k,b);if(b>4){OS=[OS[0]];OF=[OF[0]];OC=[OC[0]];OK=[OK[0]];}
+ var best=null,bs=1e9;
+ OS.forEach(function(S){OF.forEach(function(F){OC.forEach(function(C){OK.forEach(function(K){var out=[],tot=0;
+  for(var i=0;i<b;i++){if(S[i]+F[i]+C[i]+K[i]===0)continue;var d=fit(S[i],F[i],C[i],K[i]);if(!d)return;out.push(d);tot+=score(d,S[i],F[i],C[i],K[i]);}
+  if(tot<bs){bs=tot;best=out;}});});});});
+ return best;}
+function platesFor(r){var s=r.lights,f=r.fans,c=r.level==='smart'?r.curtains:0,k=r.sockets;if(s+f+c+k===0)return[];
+ for(var b=Math.max(1,r.boards);b<=8;b++){var res=bestFor(b,s,f,c,k);if(res)return res;}
+ return [];}
+
+// ---------- Room templates ----------
+var T={living:{n:'Living room',l:8,f:2,c:2,k:1,b:2,ac:1,tv:1},dining:{n:'Dining',l:4,f:1,c:1,k:0,b:1,ac:0,tv:0},kitchen:{n:'Kitchen',l:4,f:1,c:0,k:0,b:1,ac:0,tv:0},
+ master_bedroom:{n:'Master bedroom',l:6,f:1,c:1,k:2,b:2,ac:1,tv:1},bedroom:{n:'Bedroom',l:5,f:1,c:1,k:1,b:1,ac:1,tv:0},kids_bedroom:{n:'Kids bedroom',l:5,f:1,c:1,k:1,b:1,ac:1,tv:0},
+ bathroom:{n:'Bathroom',l:2,f:0,c:0,k:0,b:1,ac:0,tv:0},entrance:{n:'Entrance & passage',l:3,f:0,c:0,k:0,b:1,ac:0,tv:0},balcony:{n:'Balcony',l:2,f:0,c:0,k:0,b:1,ac:0,tv:0},
+ study:{n:'Study',l:4,f:1,c:1,k:1,b:1,ac:1,tv:0},terrace:{n:'Terrace',l:4,f:0,c:0,k:0,b:1,ac:0,tv:0},home_theatre:{n:'Home theatre',l:6,f:0,c:1,k:1,b:1,ac:1,tv:1},staircase:{n:'Staircase',l:3,f:0,c:0,k:0,b:2,ac:0,tv:0}};
+var HOMES={'1 BHK':['living','kitchen','master_bedroom','bathroom','entrance','balcony'],'2 BHK':['living','kitchen','master_bedroom','bedroom','bathroom','bathroom','entrance','balcony'],
+ '3 BHK':['living','dining','kitchen','master_bedroom','bedroom','bedroom','bathroom','bathroom','entrance','balcony'],
+ '4 BHK':['living','dining','kitchen','master_bedroom','bedroom','bedroom','bedroom','bathroom','bathroom','bathroom','entrance','balcony'],
+ 'Villa':['living','dining','kitchen','master_bedroom','bedroom','bedroom','bedroom','home_theatre','bathroom','bathroom','bathroom','entrance','staircase','terrace']};
+var uid=0;
+function mkRoom(type,over){var t=T[type]||T.bedroom;var r={id:++uid,type:type,name:t.n,lights:t.l,fans:t.f,curtains:t.c,sockets:t.k,boards:t.b,ac:t.ac,tv:t.tv,level:type==='bathroom'?'normal':'smart',est:false};for(var k in over)r[k]=over[k];return r;}
+function templateRooms(home){var cnt={};return HOMES[home].map(function(t){cnt[t]=(cnt[t]||0)+1;var r=mkRoom(t);if(cnt[t]>1)r.name=r.name+' '+cnt[t];if(t==='bedroom')r.name='Bedroom '+(cnt[t]+1);return r;});}
+
+// ---------- State ----------
+var st={token:store('nnTok')||'',home:'3 BHK',stage:'',rooms:[],files:[],ai:null};
+function step(n){[1,2,3,4].forEach(function(i){$('#s'+i).classList.toggle('hidden',i!==n);});
+ $$('#steps span').forEach(function(s){var i=+s.dataset.s;s.className=i===n?'on':(i<n?'done':'');});
+ window.scrollTo({top:Math.max(0,$('#s'+n).getBoundingClientRect().top+window.scrollY-90),behavior:'smooth'});}
+if(st.token){st.home=store('nnHome')||'3 BHK';step(2);}
+
+// ---------- Step 1: gate ----------
+$('#gGo').addEventListener('click',function(){
+ var name=$('#gName').value.trim(),phone=$('#gPhone').value.replace(/\D/g,'');if(phone.length===12&&phone.indexOf('91')===0)phone=phone.slice(2);
+ var e=$('#gErr');e.textContent='';
+ if(!name){e.textContent='Please enter your name.';return;} if(phone.length!==10){e.textContent='Please enter a 10-digit mobile number.';return;}
+ if(!$('#gConsent').checked){e.textContent='Please tick the box to continue.';return;}
+ var b=this;b.disabled=true;b.textContent='Please wait…';
+ fetch('/api/session',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name,phone:phone,area:$('#gArea').value,email:$('#gEmail').value,home:$('#gHome').value,stage:$('#gStage').value,consent:true})})
+ .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j};});})
+ .then(function(x){if(!x.ok||!x.j.ok)throw new Error(x.j.error||'Something went wrong');st.token=x.j.token;st.home=$('#gHome').value;st.stage=$('#gStage').value;store('nnTok',st.token);store('nnHome',st.home);track('generate_lead',{form:'ai_designer_signup'});step(2);})
+ .catch(function(err){e.textContent=err.message||'Could not connect. Please try again.';})
+ .then(function(){b.disabled=false;b.textContent='Continue to the designer';});
+});
+
+// ---------- Step 2: upload ----------
+var MAXPAGES=6;
+function loadScript(src){return new Promise(function(res,rej){var s=document.createElement('script');s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s);});}
+var pdfReady=null;
+function pdfjs(){if(!pdfReady)pdfReady=loadScript('/smart-home-design/vendor/pdf.min.js').then(function(){window.pdfjsLib.GlobalWorkerOptions.workerSrc='/smart-home-design/vendor/pdf.worker.min.js';return window.pdfjsLib;});return pdfReady;}
+function canvasToJpeg(cv,maxDim,q){var w=cv.width,h=cv.height,sc=Math.min(1,maxDim/Math.max(w,h));var c2=document.createElement('canvas');c2.width=Math.round(w*sc);c2.height=Math.round(h*sc);var x=c2.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c2.width,c2.height);x.drawImage(cv,0,0,c2.width,c2.height);return c2;}
+function imgFileToCanvas(file){return new Promise(function(res,rej){var u=URL.createObjectURL(file),im=new Image();im.onload=function(){var c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;c.getContext('2d').drawImage(im,0,0);URL.revokeObjectURL(u);res(c);};im.onerror=function(){URL.revokeObjectURL(u);rej(new Error('Could not read '+file.name));};im.src=u;});}
+function addFiles(list){var e=$('#uErr');e.textContent='';var arr=Array.prototype.slice.call(list);
+ var chain=Promise.resolve();
+ arr.forEach(function(file){chain=chain.then(function(){
+  if(st.files.length>=MAXPAGES){e.textContent='Up to '+MAXPAGES+' pages in total. Extra pages were skipped.';return;}
+  if(file.size>25*1024*1024){e.textContent=file.name+' is larger than 25 MB.';return;}
+  if(/pdf$/i.test(file.type)||/\.pdf$/i.test(file.name)){
+   $('#prog').classList.remove('hidden');$('#progT').textContent='Opening '+file.name+'…';
+   return pdfjs().then(function(lib){return file.arrayBuffer().then(function(buf){return lib.getDocument({data:buf}).promise;});}).then(function(pdf){
+    var p=Promise.resolve();for(var i=1;i<=pdf.numPages&&i<=MAXPAGES;i++)(function(i){p=p.then(function(){if(st.files.length>=MAXPAGES)return;return pdf.getPage(i).then(function(pg){var vp=pg.getViewport({scale:1});var sc=Math.min(3,2200/Math.max(vp.width,vp.height));var v=pg.getViewport({scale:sc});var c=document.createElement('canvas');c.width=v.width;c.height=v.height;var ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);return pg.render({canvasContext:ctx,viewport:v}).promise.then(function(){st.files.push({label:file.name+(pdf.numPages>1?' · page '+i:''),canvas:c});});});});})(i);
+    if(pdf.numPages>MAXPAGES)e.textContent='Only the first pages of '+file.name+' were added (limit '+MAXPAGES+' pages).';
+    return p;}).catch(function(){e.textContent='Could not open '+file.name+'. Try exporting it as a JPG or PNG.';}).then(function(){$('#prog').classList.add('hidden');});
+  }
+  if(/^image\//.test(file.type))return imgFileToCanvas(file).then(function(c){st.files.push({label:file.name,canvas:c});}).catch(function(err){e.textContent=err.message;});
+  e.textContent=file.name+' is not a PDF, JPG or PNG.';
+ });});
+ chain.then(renderThumbs);}
+function renderThumbs(){$('#thumbs').innerHTML=st.files.map(function(f,i){var t=canvasToJpeg(f.canvas,320,.7).toDataURL('image/jpeg',.7);return '<div class="th"><img src="'+t+'" alt=""><small>'+esc(f.label)+'</small><button data-rm="'+i+'" aria-label="Remove">×</button></div>';}).join('');$('#analyse').disabled=!st.files.length;}
+$('#file').addEventListener('change',function(){addFiles(this.files);this.value='';});
+var drop=$('#drop');['dragenter','dragover'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.add('over');});});
+['dragleave','drop'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.remove('over');});});
+drop.addEventListener('drop',function(e){if(e.dataTransfer&&e.dataTransfer.files)addFiles(e.dataTransfer.files);});
+$('#thumbs').addEventListener('click',function(e){var b=e.target.closest('[data-rm]');if(b){st.files.splice(+b.dataset.rm,1);renderThumbs();}});
+
+function encodeAll(){var budget=3600000,dim=1800,q=.72,out;
+ for(var tries=0;tries<5;tries++){out=st.files.map(function(f){var c=canvasToJpeg(f.canvas,dim,q);return{label:f.label,mime:'image/jpeg',data:c.toDataURL('image/jpeg',q).split(',')[1]};});
+  var tot=out.reduce(function(a,b){return a+b.data.length;},0);if(tot<=budget)return out;dim=Math.round(dim*.82);q=Math.max(.5,q-.06);}
+ return out;}
+$('#analyse').addEventListener('click',function(){
+ var b=this,e=$('#uErr');e.textContent='';b.disabled=true;$('#skip').disabled=true;$('#prog').classList.remove('hidden');
+ var msgs=['Reading your drawings…','Finding the rooms…','Counting lights, fans and windows…','Almost done…'],mi=0;$('#progT').textContent=msgs[0];
+ var timer=setInterval(function(){mi=Math.min(mi+1,msgs.length-1);$('#progT').textContent=msgs[mi];},7000);
+ track('ai_designer_analyse',{pages:st.files.length});
+ fetch('/api/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({token:st.token,images:encodeAll()})})
+ .then(function(r){return r.json().then(function(j){return{status:r.status,j:j};},function(){return{status:r.status,j:{ok:false,error:r.status===413?'Your drawings are too large. Please upload fewer pages.':'Unexpected response'}};});})
+ .then(function(x){
+  if(x.status===401){store('nnTok','');st.token='';step(1);$('#gErr').textContent=x.j.error;return;}
+  if(!x.j.ok)throw new Error(x.j.error||'Could not read the drawings');
+  st.ai=x.j;
+  if(!x.j.rooms.length){throw new Error(x.j.note||'We could not find rooms in these drawings. Please fill them in below.');}
+  st.rooms=x.j.rooms.map(function(r){return mkRoom(T[r.type]?r.type:(/bed/.test(r.type)?'bedroom':'bedroom'),{name:r.name,lights:r.lights,fans:r.fans,curtains:r.curtains,sockets:r.sockets,boards:r.boards,ac:r.ac,tv:r.tv,est:r.estimated,level:r.type==='bathroom'?'normal':'smart',type:r.type});});
+  renderAiNote();renderRooms();step(3);
+ })
+ .catch(function(err){e.textContent=err.message+' You can continue by entering rooms yourself.';st.rooms=templateRooms(st.home);renderAiNote(true);renderRooms();$('#skip').textContent='Continue: enter rooms myself';})
+ .then(function(){clearInterval(timer);$('#prog').classList.add('hidden');b.disabled=!st.files.length;$('#skip').disabled=false;});
+});
+$('#skip').addEventListener('click',function(){if(!st.rooms.length)st.rooms=templateRooms(st.home);if(!st.ai)renderAiNote(true);renderRooms();step(3);});
+function renderAiNote(manual){var h='';
+ if(st.ai&&!manual){var est=st.ai.rooms.some(function(r){return r.estimated;});
+  h='<div class="note">We read: <b>'+esc((st.ai.drawing_types||[]).join(', ')||'your drawings')+'</b>. '+esc(st.ai.note||'')+'</div>';
+  if(est)h+='<div class="note warn">Rooms marked <span class="est">estimated</span> were guessed from the plan. Please correct the counts if you know them.</div>';}
+ else h='<div class="note">We\'ve filled in typical rooms for a '+esc(st.home)+'. Change names and counts to match your home.</div>';
+ $('#aiNote').innerHTML=h;}
+
+// ---------- Step 3: rooms ----------
+var LD=[['lights','Lights'],['fans','Fans'],['curtains','Curtains'],['sockets','USB sockets'],['boards','Switchboards'],['ac','ACs'],['tv','TVs']];
+function renderRooms(){$('#rooms').innerHTML=st.rooms.map(function(r){
+ return '<div class="room'+(r.level==='normal'?' off':'')+'" data-id="'+r.id+'"><div class="rh"><input value="'+esc(r.name)+'" data-name aria-label="Room name">'+(r.est?'<span class="est">estimated</span>':'')+
+ '<div class="seg">'+[['smart','Smart'],['touch','Touch look'],['normal','Normal']].map(function(l){return '<button data-level="'+l[0]+'" class="'+(r.level===l[0]?'on':'')+'">'+l[1]+'</button>';}).join('')+'</div><button class="del" data-del aria-label="Remove room">×</button></div>'+
+ '<div class="loads">'+LD.map(function(x){return '<div class="ld"><small>'+x[1]+'</small><div class="st"><button data-dec="'+x[0]+'">−</button><span>'+r[x[0]]+'</span><button data-inc="'+x[0]+'">+</button></div></div>';}).join('')+'</div></div>';}).join('');}
+function room(el){var id=+el.closest('.room').dataset.id;return st.rooms.filter(function(r){return r.id===id;})[0];}
+$('#rooms').addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;var r=room(t);if(!r)return;
+ if(t.dataset.level){r.level=t.dataset.level;}
+ else if(t.dataset.inc){var k=t.dataset.inc;r[k]=Math.min(k==='lights'?30:k==='boards'?6:8,r[k]+1);}
+ else if(t.dataset.dec){var k2=t.dataset.dec;r[k2]=Math.max(k2==='boards'?1:0,r[k2]-1);}
+ else if(t.hasAttribute('data-del')){st.rooms=st.rooms.filter(function(x){return x!==r;});}
+ renderRooms();});
+$('#rooms').addEventListener('input',function(e){if(e.target.hasAttribute('data-name')){var r=room(e.target);if(r)r.name=e.target.value.slice(0,40);}});
+$('#addRoom').addEventListener('click',function(){st.rooms.push(mkRoom('bedroom',{name:'New room'}));renderRooms();});
+function isBed(r){return /bedroom/.test(r.type)||/bed/i.test(r.name);}
+function isLiving(r){return r.type==='living'||/living|hall|lounge/i.test(r.name);}
+$$('[data-preset]').forEach(function(b){b.addEventListener('click',function(){var p=b.dataset.preset;
+ st.rooms.forEach(function(r){var bath=r.type==='bathroom';
+  if(p==='all')r.level=bath?'touch':'smart';
+  else if(p==='living')r.level=isLiving(r)?'smart':'normal';
+  else if(p==='livbed')r.level=(isLiving(r)||isBed(r))?'smart':'normal';
+  else if(p==='looks')r.level=isLiving(r)?'smart':'touch';});
+ $$('[data-preset]').forEach(function(x){x.classList.toggle('on',x===b);});renderRooms();});});
+
+// ---------- Step 4: design ----------
+var NAMES={'cu-motor':['Curtain motor with track','curtain-motor'],'ac-ir':['IR blaster for AC & TV','ir-emitter'],'gateway':['Zigbee + BLE smart gateway','zigbee-gateway'],'repeater':['Zigbee repeater (range extender)','zigbee-gateway'],
+ 'ct-sc4':['4-button scene controller','scene-4'],'ct-p4':['4" touch panel, Alexa built in','panel-4'],'ct-p7':['7" touch panel','panel-7'],'ct-p10':['10" touch panel','panel-10'],
+ 'lk-s200':['S200 smart lock','lock-s200'],'lk-k390':['K390 slim smart lock','lock-k390'],'lk-s3':['S3 Pro video lock','lock-s3-pro'],'lk-k300':['K300 face recognition lock','lock-k300'],'lk-s5':['S5 AI video lock','lock-s5-ai'],'lk-s7':['S7 Villa lock','lock-s7-villa'],'lk-g1':['G1 glass door lock','lock-g1'],'lk-h1':['H1 bedroom door lock','lock-h1'],
+ 'se-bell':['Video doorbell','video-doorbell'],'se-vdp':['7" video door phone','video-door-phone'],'retro':['Retro-fit module','retrofit']};
+function design(){var wiring=$('#oWiring').value,items=[],rooms=[],zig=0,smartRooms=0,plates=0,motors=0;
+ var sceneOpt=$('#oScene').value,bedLocks=$('#oLocks2').value==='1';
+ st.rooms.forEach(function(r){var lines=[];
+  if(r.level==='normal'){rooms.push({r:r,lines:['Keep regular switches (no change)']});return;}
+  if(r.level==='smart')smartRooms++;
+  if(r.level==='smart'&&wiring==='retro'){
+   var ch=r.lights+r.fans,n4=Math.floor(ch/4),rem=ch%4;
+   if(n4){items.push({kind:'item',id:'retro-4',qty:n4,label:'4-channel retro-fit module',room:r.name});lines.push('<b>'+n4+' ×</b> 4-channel retro-fit module');zig+=n4;}
+   if(rem){items.push({kind:'item',id:'retro-'+rem,qty:1,label:rem+'-channel retro-fit module',room:r.name});lines.push('<b>1 ×</b> '+rem+'-channel retro-fit module');zig++;}
+   if(r.curtains){var cm=Math.ceil(r.curtains/2);items.push({kind:'item',id:'retro-curtain',qty:cm,label:'2-channel curtain retro-fit module',room:r.name});lines.push('<b>'+cm+' ×</b> curtain retro-fit module');zig+=cm;}
+   if(r.sockets)lines.push('Existing sockets stay as they are');
+  } else {
+   var ps=platesFor(r),series=r.level==='smart'?'zigbee':'touch';
+   ps.forEach(function(d,i){var lbl='Glass touch plate '+d.code+' ('+d.box+' box)'+(series==='touch'?', touch-only':', Zigbee smart');
+    items.push({kind:'plate',code:d.code,series:series,qty:1,label:lbl,room:r.name});plates++;if(series==='zigbee')zig++;
+    lines.push('Board '+(i+1)+': <span class="code">'+d.code+'</span> glass touch plate, '+d.box+' box'+(series==='touch'?' (touch only, no app)':''));});
+   if(!ps.length&&r.lights+r.fans+r.sockets>0)lines.push('Too many loads for one room. Our engineer will plan extra boards.');
+  }
+  if(r.level==='smart'){
+   if(r.curtains){items.push({kind:'item',id:'cu-motor',qty:r.curtains,label:NAMES['cu-motor'][0],room:r.name});lines.push('<b>'+r.curtains+' ×</b> curtain motor with track');zig+=r.curtains;motors+=r.curtains;}
+   if(r.ac+r.tv>0){items.push({kind:'item',id:'ac-ir',qty:1,label:NAMES['ac-ir'][0],room:r.name});lines.push('<b>1 ×</b> IR blaster to control '+[r.ac?r.ac+' AC'+(r.ac>1?'s':''):'',r.tv?r.tv+' TV'+(r.tv>1?'s':''):''].filter(Boolean).join(' + '));}
+   if(sceneOpt==='all'||(sceneOpt==='bed'&&isBed(r))){items.push({kind:'item',id:'ct-sc4',qty:1,label:NAMES['ct-sc4'][0],room:r.name});lines.push('<b>1 ×</b> 4-button scene controller (Good night, Movie…)');zig++;}
+   if(bedLocks&&isBed(r)){items.push({kind:'item',id:'lk-h1',qty:1,label:NAMES['lk-h1'][0],room:r.name});lines.push('<b>1 ×</b> H1 smart door lock');}
+  }
+  rooms.push({r:r,lines:lines});});
+ var whole=[];
+ var panel=$('#oPanel').value,lock=$('#oLock').value,door=$('#oDoor').value;
+ if(panel){items.push({kind:'item',id:panel,qty:1,label:NAMES[panel][0],room:'Living room'});whole.push([panel,1,'Controls the whole home; has a built-in smart hub']);}
+ if(zig){var gw=Math.max(panel?0:1,Math.ceil(zig/64)-(panel?1:0));if(gw){items.push({kind:'item',id:'gateway',qty:gw,label:NAMES.gateway[0],room:'Whole home'});whole.push(['gateway',gw,'Connects all smart devices to the app, Alexa and Google; works even if the internet is down']);}
+  var rep=st.rooms.filter(function(r){return r.level!=='normal';}).length>=8||/Villa|4 BHK/.test(st.home)?(/Villa/.test(st.home)?2:1):0;
+  if(rep){items.push({kind:'item',id:'repeater',qty:rep,label:NAMES.repeater[0],room:'Whole home'});whole.push(['repeater',rep,'Extends the signal across a larger home']);}}
+ if(lock){items.push({kind:'item',id:lock,qty:1,label:NAMES[lock][0],room:'Main door'});whole.push([lock,1,'Main door']);}
+ if(door){items.push({kind:'item',id:door,qty:1,label:NAMES[door][0],room:'Main door'});whole.push([door,1,'See and talk to visitors from your phone']);}
+ return {items:items,rooms:rooms,whole:whole,stats:{smartRooms:smartRooms,plates:plates,motors:motors,devices:items.reduce(function(a,b){return a+b.qty;},0)}};}
+var last=null;
+function summaryText(d){var L=['Hi Neonest, I designed my smart home with your AI designer.','','Home: '+st.home+(st.stage?' · '+st.stage:'')+' · Wiring: '+($('#oWiring').value==='retro'?'retro-fit (keep switches)':'new wiring'),''];
+ d.rooms.forEach(function(x){L.push('• '+x.r.name+' ['+(x.r.level==='smart'?'Smart':x.r.level==='touch'?'Touch look':'Normal')+'] '+x.r.lights+'L/'+x.r.fans+'F/'+x.r.curtains+'C/'+x.r.sockets+'SK, '+x.r.boards+' board(s)');x.lines.forEach(function(l){L.push('   - '+l.replace(/<[^>]+>/g,''));});});
+ if(d.whole.length){L.push('','Whole home:');d.whole.forEach(function(w){L.push('   - '+w[1]+' × '+NAMES[w[0]][0]);});}
+ L.push('','I will share my drawings in this chat. Please call me to book a free site visit.');return L.join('\n');}
+function renderDesign(){var d=design();last=d;
+ $('#totals').innerHTML=[[d.stats.smartRooms,'smart rooms'],[d.stats.plates,'switch plates'],[d.stats.motors,'curtain motors'],[d.stats.devices,'devices in total']].map(function(t){return '<div class="tot"><b>'+t[0]+'</b><small>'+t[1]+'</small></div>';}).join('');
+ $('#result').innerHTML=d.rooms.map(function(x){var lv=x.r.level;return '<div class="res-room"><h3>'+esc(x.r.name)+'<span class="tag'+(lv==='smart'?'':' t')+'">'+(lv==='smart'?'Smart':lv==='touch'?'Touch look':'Normal')+'</span></h3><ul>'+x.lines.map(function(l){return '<li>'+l+'</li>';}).join('')+'</ul></div>';}).join('');
+ $('#whole').innerHTML=d.whole.length?d.whole.map(function(w){var n=NAMES[w[0]];return '<div class="wi"><img src="'+IMG+n[1]+'.webp" alt=""><div><b>'+w[1]+' × '+esc(n[0])+'</b><small>'+esc(w[2])+'</small></div></div>';}).join(''):'<p class="sub">No whole-home devices selected.</p>';
+ $('#send').href='https://wa.me/'+WA+'?text='+encodeURIComponent(summaryText(d));}
+$('#design').addEventListener('click',function(){if(!st.rooms.length){alertMsg('Please add at least one room.');return;}renderDesign();step(4);track('ai_designer_design',{rooms:st.rooms.length});});
+function alertMsg(m){var n=$('#aiNote');n.insertAdjacentHTML('afterbegin','<div class="note warn">'+esc(m)+'</div>');}
+$('#edit').addEventListener('click',function(){step(3);});
+var sent=false;var _rd=renderDesign;renderDesign=function(){sent=false;_rd();};
+$('#send').addEventListener('click',function(){if(!last||sent)return;sent=true;
+ try{fetch('/api/submit',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},body:JSON.stringify({token:st.token,items:last.items,summary:summaryText(last),wiring:$('#oWiring').value,stage:st.stage})});}catch(_){}
+ track('generate_lead',{form:'ai_designer',rooms:last.stats.smartRooms,devices:last.stats.devices});});
+})();
+</script>
+</body>
+</html>

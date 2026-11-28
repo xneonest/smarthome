@@ -226,6 +226,7 @@ export default function App() {
               <ul className="space-y-2.5">
                 {[
                   { label: 'Plan Your Smart Home', href: '/plan-your-smart-home/' },
+                  { label: 'AI Designer: Upload Drawings', href: '/smart-home-design/' },
                   { label: 'Home Automation Mumbai', href: '/smart-home-automation-mumbai/' },
                   { label: 'Home Automation Navi Mumbai', href: '/home-automation-navi-mumbai/' },
                   { label: 'Home Automation Thane', href: '/home-automation-thane/' },
